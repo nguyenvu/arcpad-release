@@ -23,7 +23,7 @@ Do not commit the `.dmg` to this repo. Attach it to the release.
 ```ruby
 cask "arcpad" do
   version "1.0.3"
-  sha256 "REPLACE_AFTER_RELEASE"
+  sha256 "7001b461a108afefabe89e199e403b4dda0753b29bc1b29ffe71474678d26e67"
 
   url "https://github.com/nguyenvu/arcpad-release/releases/download/#{version}/ArcPad-#{version}.dmg"
   name "ArcPad"
