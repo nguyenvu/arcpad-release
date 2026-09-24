@@ -22,6 +22,7 @@ Do not commit the `.dmg` to this repo. Attach it to the release.
 
 ```bash
 brew tap nguyenvu/tap
+brew trust --cask nguyenvu/tap/arcpad
 brew install --cask arcpad
 ```
 
