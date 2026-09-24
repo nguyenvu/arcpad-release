@@ -18,25 +18,14 @@ shasum -a 256 ArcPad-1.0.3.dmg
 
 Do not commit the `.dmg` to this repo. Attach it to the release.
 
-## Homebrew (tap later)
+## Homebrew
 
-```ruby
-cask "arcpad" do
-  version "1.0.3"
-  sha256 "7001b461a108afefabe89e199e403b4dda0753b29bc1b29ffe71474678d26e67"
-
-  url "https://github.com/nguyenvu/arcpad-release/releases/download/#{version}/ArcPad-#{version}.dmg"
-  name "ArcPad"
-  desc "Spatial app launcher for Mac"
-  homepage "https://github.com/nguyenvu/arcpad-release"
-
-  app "ArcPad.app"
-
-  zap trash: [
-    "~/Library/Preferences/com.voq.no.ArcPad.plist",
-  ]
-end
+```bash
+brew tap nguyenvu/tap
+brew install --cask arcpad
 ```
+
+Tap: [nguyenvu/homebrew-tap](https://github.com/nguyenvu/homebrew-tap). This is a personal tap, not `homebrew/cask`.
 
 ## What’s new in 1.0.3
 
